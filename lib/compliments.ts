@@ -11,7 +11,7 @@ export const compliments: Record<string, string> = {
   J: "Joyful 😍",
   K: "Kindhearted 🤗",
   L: "Lovely 💐",
-  M: "Misha loooves you",
+  M: "Loooved by Misha",
   N: "Nurturing 🌱",
   O: "Outstanding 🌞",
   P: "Precious 💎",
