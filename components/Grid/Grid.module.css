@@ -1,0 +1,82 @@
+.grid {
+  display: flex;
+  gap: 16px;
+  width: 720px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
+  animation: heartbeat 3s infinite;
+
+  @media screen and (max-width: 450px) {
+    width: 360px;
+    margin: 16px auto;
+    gap: 8px;
+  }
+}
+
+.grid .letterBtn:nth-child(1) {
+  margin-left: calc(100% / 9);
+}
+.grid .letterBtn:nth-child(2) {
+  margin-right: calc(100% / 13.5);
+}
+.grid .letterBtn:nth-child(3) {
+  margin-left: calc(100% / 13.5);
+}
+.grid .letterBtn:nth-child(4) {
+  margin-right: calc(100% / 9);
+}
+.grid .letterBtn:nth-child(13) {
+  font-size: 28px;
+}
+.grid .letterBtn:nth-child(17) {
+  margin-left: calc(100% / 9);
+}
+.grid .letterBtn:nth-child(21) {
+  margin-right: calc(100% / 9);
+}
+.grid .letterBtn:nth-child(22) {
+  margin-left: calc(100% / 7.5);
+}
+.grid .letterBtn:nth-child(25) {
+  margin-right: calc(100% / 7.5);
+}
+.grid .letterBtn:nth-child(26) {
+  width: 192px;
+  @media screen and (max-width: 450px) {
+    width: 96px;
+  }
+}
+
+.letterBtn {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #f48fb1;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    background: #ec407a;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
