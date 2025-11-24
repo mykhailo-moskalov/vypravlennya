@@ -10,6 +10,7 @@ const Grid = () => {
 
   return (
     <>
+      <Output />
       <div className={css.grid}>
         {Object.keys(compliments).map((letter) => (
           <button
@@ -21,7 +22,6 @@ const Grid = () => {
           </button>
         ))}
       </div>
-      <Output />
     </>
   );
 };
