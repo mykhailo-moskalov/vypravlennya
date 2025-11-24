@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-Bottom: 15%;
+  margin-bottom: 15%;
   animation: heartbeat 3s infinite;
 
   @media screen and (max-width: 450px) {
