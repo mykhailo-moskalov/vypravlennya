@@ -6,8 +6,9 @@ const Output = () => {
   const { selected, clearSelected } = useComplimentStore();
 
   return (
-    <>
-      <div className={css.output}>
+    <div className={css.output}>
+      <p>You are</p>
+      <div>
         <AnimatePresence mode="wait">
           {selected && (
             <motion.p
@@ -27,7 +28,7 @@ const Output = () => {
           Clear
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
